@@ -1,0 +1,36 @@
+docker --version               # Show Docker version
+docker info                    # Display system-wide information
+docker login                   # Login to Docker Hub
+docker logout                  # Logout from Docker Hub
+docker search <image>          # Search image on Docker Hub
+docker pull <image>            # Pull image from Docker Hub
+docker push <image>            # Push image to Docker Hub
+docker ps                      # List running containers
+docker ps -a                   # List all containers (running + stopped)
+docker run <image>             # Run a container from image
+docker run -it <image> bash    # Run container in interactive mode
+docker start <container_id>    # Start a stopped container
+docker stop <container_id>     # Stop a running container
+docker restart <container_id>  # Restart container
+docker rm <container_id>       # Remove container
+docker logs <container_id>     # Show container logs
+docker exec -it <container_id> bash   # Access container shell
+docker images                  # List all images
+docker rmi <image_id>          # Remove an image
+docker build -t myapp:1.0 .    # Build image from Dockerfile
+docker tag myapp:1.0 myuser/myapp:1.0   # Tag image
+docker volume ls               # List volumes
+docker volume rm <volume>      # Remove volume
+docker network ls              # List networks
+docker network rm <network>    # Remove network
+docker system df               # Show disk usage
+docker system prune            # Remove unused containers, images, networks
+docker container prune         # Remove all stopped containers
+docker image prune             # Remove dangling images
+docker volume prune            # Remove unused volumes
+docker-compose up              # Start services
+docker-compose up -d           # Start services in background
+docker-compose down            # Stop and remove services
+docker-compose ps              # List services
+docker-compose logs            # Show service logs
+
